@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "public_template": true,
+  "routes": [
+    {
+      "topic": "public_memory_installation",
+      "preferred_surface": "wiki",
+      "query": "public memory installation",
+      "route": "knowledge/wiki/README.md",
+      "source_ref": "templates/llmwiki-row.template.jsonl",
+      "claim": "Installation guidance is represented as a public template."
+    },
+    {
+      "topic": "public_skill_template",
+      "preferred_surface": "skill",
+      "query": "public reusable workflow skill",
+      "route": "templates/skill-page.template.md",
+      "source_ref": "templates/skill-page.template.md",
+      "claim": "Skill bodies are template-only in the public bundle."
+    },
+    {
+      "topic": "public_privacy_boundary",
+      "preferred_surface": "governance",
+      "query": "privacy boundary public projection",
+      "route": "config/public-projection.yaml",
+      "source_ref": "config/public-projection.yaml",
+      "claim": "Private content is omitted or templated by projection policy."
+    }
+  ]
+}

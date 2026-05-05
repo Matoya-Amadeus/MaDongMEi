@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-05-03T22:48:11.893218+08:00",
+  "data_file": "data/longmemeval/longmemeval_s_cleaned.json",
+  "granularity": "session",
+  "questions": 500,
+  "backends": [
+    "madongmei_overall"
+  ],
+  "rows": [
+    {
+      "backend": "madongmei_overall",
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0,
+      "thresholds": {
+        "recall_any@5": 0.995,
+        "recall_any@10": 0.995,
+        "ndcg_any@10": 0.93
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "policy_path": "config/governance/longmemeval_policy.json",
+  "internal_profiles": {
+    "madongmei_semantic_hybrid:default": {
+      "backend": "madongmei_semantic_hybrid",
+      "profile": "default",
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "madongmei_semantic_hybrid:tfidf_fallback": {
+      "backend": "madongmei_semantic_hybrid",
+      "profile": "tfidf_fallback",
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    }
+  },
+  "reference": {
+    "source": "MemPalace LongMemEval public claim",
+    "mempalace_claim_recall_any@5": 0.966,
+    "notes": "Use same LongMemEval dataset and retrieval metric semantics for comparison."
+  }
+}

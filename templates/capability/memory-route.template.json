@@ -1,0 +1,14 @@
+{
+  "id": "example_memory_route",
+  "memory_type": "request_context",
+  "aliases": ["memory", "context"],
+  "positive_examples": ["Use public memory context for this request."],
+  "negative_examples": ["Run a release validation command."],
+  "threshold_policy": {"mode": "default", "select_threshold": 0.35, "boost": 0.0},
+  "capture_policy": {"mode": "explicit_only", "capture_allowed": true},
+  "recall_policy": {"mode": "summary_then_raw", "topk": 5},
+  "privacy_boundary": "public_records_only",
+  "budget_priority": "normal",
+  "recording_mode": "off_by_default",
+  "promotion_policy": "manual_with_receipt"
+}

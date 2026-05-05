@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "public_template": true,
+  "dataset": "data/longmemeval/longmemeval_s_cleaned.json",
+  "private_content_action": "omit",
+  "required_backends": [
+    "madongmei_overall"
+  ],
+  "absolute": {
+    "madongmei_overall": {
+      "min_recall_any@5": 0.995,
+      "min_recall_any@10": 0.995,
+      "min_ndcg_any@10": 0.93
+    }
+  },
+  "internal_profiles": {
+    "madongmei_semantic_hybrid:default": {
+      "min_recall_any@5": 0.995,
+      "min_recall_any@10": 0.995,
+      "min_ndcg_any@10": 0.93
+    },
+    "madongmei_semantic_hybrid:tfidf_fallback": {
+      "min_recall_any@5": 0.95,
+      "min_recall_any@10": 0.97,
+      "min_ndcg_any@10": 0.9
+    }
+  },
+  "subtype_absolute": {
+    "madongmei_overall": {
+      "single-session-preference": {
+        "min_recall_any@5": 0.99
+      },
+      "single-session-assistant": {
+        "min_recall_any@5": 0.99
+      },
+      "temporal-reasoning": {
+        "min_recall_any@5": 0.99
+      }
+    }
+  },
+  "delta_from_recent": {
+    "window": 10,
+    "max_recall_any@5_drop": 0.03,
+    "max_ndcg_any@10_drop": 0.03
+  },
+  "freshness": {
+    "max_summary_age_hours": 168
+  },
+  "reference": {
+    "source": "MemPalace LongMemEval public claim",
+    "mempalace_claim_recall_any@5": 0.966,
+    "notes": "Use same LongMemEval dataset and retrieval metric semantics for comparison."
+  }
+}

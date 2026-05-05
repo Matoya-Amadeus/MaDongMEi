@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MaDongMei request route capability templates",
+  "schema_version": 1,
+  "definitions": {
+    "nonEmptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "skillRoute": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "intent",
+        "aliases",
+        "positive_examples",
+        "negative_examples",
+        "threshold_policy",
+        "suppression_rules",
+        "tool_hints",
+        "wiki_affinity",
+        "llmwiki_affinity",
+        "capture_policy"
+      ]
+    },
+    "toolHint": {
+      "type": "object",
+      "required": [
+        "id",
+        "when_to_hint",
+        "when_not_to_hint",
+        "safety_level",
+        "requires_explicit_user_action",
+        "paired_intents",
+        "paired_skills",
+        "paired_routes",
+        "threshold_policy"
+      ]
+    },
+    "memoryRoute": {
+      "type": "object",
+      "required": [
+        "id",
+        "memory_type",
+        "aliases",
+        "positive_examples",
+        "negative_examples",
+        "threshold_policy",
+        "capture_policy",
+        "recall_policy",
+        "privacy_boundary",
+        "budget_priority",
+        "recording_mode",
+        "promotion_policy"
+      ]
+    },
+    "wikiRoute": {
+      "type": "object",
+      "required": [
+        "topic_id",
+        "aliases",
+        "positive_examples",
+        "negative_examples",
+        "preferred_surface",
+        "capture_allowed",
+        "fallback_to_llmwiki",
+        "route_threshold_band",
+        "negative_routes"
+      ]
+    },
+    "realPromptCase": {
+      "type": "object",
+      "required": [
+        "id",
+        "query",
+        "capability_id",
+        "case_tags",
+        "expect"
+      ],
+      "properties": {
+        "expect": {
+          "type": "object",
+          "required": [
+            "memory_route",
+            "skill_mode",
+            "skill",
+            "wiki_mode",
+            "wiki",
+            "tool_mode",
+            "tool_route",
+            "wiki_action"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "policy_name": "public-capability-phase-thresholds",
+  "version": "2026-05-05",
+  "stage_a": {
+    "require_scorecard_report": true,
+    "require_standards_mapping": false
+  },
+  "stage_b": {
+    "require_codeowners": false,
+    "require_dependabot": false,
+    "require_codeql_workflow": false,
+    "require_scorecard_workflow": false
+  },
+  "stage_c": {
+    "require_wiki_buckets": true,
+    "require_wiki_index_report": false
+  },
+  "stage_d": {
+    "conflict_mode": "warn",
+    "max_high_conflicts_warn": 3
+  },
+  "stage_e": {
+    "allow_soft_fail_upgrade": true,
+    "allow_hard_fail_upgrade": true,
+    "require_monthly_drill_report": false
+  },
+  "public_notes": [
+    "Thresholds are sanitized for the public bundle.",
+    "Private delivery controls stay out of the open repository."
+  ]
+}

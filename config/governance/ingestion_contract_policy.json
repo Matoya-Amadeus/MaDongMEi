@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"required_fields":["bucket","topic","claim","source_ref"],"private_content_action":"omit"}

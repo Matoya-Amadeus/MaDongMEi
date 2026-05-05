@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "public_template": true,
+  "routes": [
+    {
+      "topic": "<public-topic>",
+      "preferred_surface": "wiki",
+      "query": "<public query>",
+      "route": "<repo-relative-template>",
+      "source_ref": "<repo-relative-public-source>",
+      "claim": "<public reusable claim>"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"rerank":{"lexical":0.45,"vector":0.4,"recency":0.15},"privacy":"public_records_only"}

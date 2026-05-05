@@ -1,0 +1,17 @@
+{
+  "id": "example_real_prompt_case",
+  "query": "请处理 example capability 并补回归",
+  "capability_id": "example_capability",
+  "case_tags": ["positive", "zh_natural"],
+  "expect": {
+    "memory_route": "skill",
+    "skill_mode": "selected",
+    "skill": "example-skill",
+    "wiki_mode": "none",
+    "wiki": "",
+    "tool_mode": "auto_hint",
+    "tool_route": "quality_gate",
+    "wiki_action": "skip",
+    "threshold_policy": {"auto_load_threshold": 0.45}
+  }
+}

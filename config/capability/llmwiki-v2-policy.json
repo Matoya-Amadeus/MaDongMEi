@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "policy_name": "public-llmwiki-v2-policy",
+  "freshness_days_limit": 30,
+  "weights": {
+    "lexical": 0.4,
+    "semantic": 0.3,
+    "authority": 0.15,
+    "freshness": 0.1,
+    "citation": 0.05
+  },
+  "authority_scores": {
+    "primary": 1.0,
+    "secondary": 0.82,
+    "tertiary": 0.65,
+    "unknown": 0.5
+  },
+  "gate_thresholds": {
+    "soft_fail": {
+      "min_groundedness": 0.7,
+      "min_citation_precision": 0.78,
+      "min_freshness_pass_rate": 0.75,
+      "min_conflict_resolution_rate": 0.65
+    },
+    "hard_fail": {
+      "min_groundedness": 0.85,
+      "min_citation_precision": 0.9,
+      "min_freshness_pass_rate": 0.9,
+      "min_conflict_resolution_rate": 0.85
+    }
+  },
+  "arbitration_weights": {
+    "relevance": 0.35,
+    "authority": 0.3,
+    "freshness": 0.15,
+    "confidence": 0.1,
+    "citation": 0.1
+  },
+  "answer_contract": {
+    "min_evidence_items": 1,
+    "min_top_score": 0.25
+  },
+  "conflict_policy": {
+    "max_unresolved_warn": 20,
+    "max_unresolved_soft_fail": 5,
+    "max_unresolved_hard_fail": 0
+  },
+  "public_notes": [
+    "Public-safe capability policy only.",
+    "No private paths, private knowledge rows, or private identifiers."
+  ]
+}

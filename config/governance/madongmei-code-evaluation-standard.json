@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "name": "madongmei-code-evaluation-standard",
+  "max_score": 100,
+  "checks": {
+    "installability": {
+      "weight": 15,
+      "category": "install",
+      "summary": "Clean-machine bootstrap and validation entrypoints are present."
+    },
+    "privacy": {
+      "weight": 15,
+      "category": "privacy",
+      "summary": "Tracked public surface is free of private paths, secrets, and private MaDongMei content."
+    },
+    "projection": {
+      "weight": 12,
+      "category": "projection",
+      "summary": "Public projection policy keeps capability separate from private content."
+    },
+    "cli_contract": {
+      "weight": 12,
+      "category": "cli",
+      "summary": "Public memoryctl compatibility surface remains available."
+    },
+    "governance": {
+      "weight": 14,
+      "category": "governance",
+      "summary": "Gate matrix, source references, release checks, and doctor reports are valid."
+    },
+    "docs": {
+      "weight": 12,
+      "category": "docs",
+      "summary": "README, AGENTS, and knowledge entrypoints describe the current public surface."
+    },
+    "storage": {
+      "weight": 10,
+      "category": "storage",
+      "summary": "Ignored local artifacts are observable through target-scoped readonly reporting."
+    },
+    "benchmark": {
+      "weight": 10,
+      "category": "benchmark",
+      "summary": "Public LongMemEval snapshot is parseable and meets the public threshold contract."
+    }
+  }
+}

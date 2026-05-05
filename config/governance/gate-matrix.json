@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "quality_gate": [
+    "scripts/git_truth_snapshot.sh",
+    "scripts/preflight_paths.sh",
+    "scripts/check_cross_repo_refs.sh",
+    "scripts/docs_reality_check.sh",
+    "scripts/cross_device_lint.sh",
+    "scripts/privacy_audit.sh",
+    "scripts/export_public_projection.py",
+    "scripts/config_schema_gate.py",
+    "scripts/llmwiki_source_ref_gate.py",
+    "scripts/gate_matrix.py",
+    "install_selfcheck.sh",
+    "install_validation_matrix.sh",
+    "scripts/request_route_real_prompt_suite.py",
+    "scripts/madongmei_code_scorecard.py",
+    "scripts/madongmei_doctor.py"
+  ],
+  "push_readiness": [
+    "scripts/git_truth_snapshot.sh",
+    "scripts/artifact_partition.sh",
+    "scripts/task_protocol_validate.py",
+    "scripts/repo_hygiene_fix.sh",
+    "scripts/local_ignored_artifact_report.py",
+    "scripts/config_schema_gate.py",
+    "scripts/privacy_audit.sh",
+    "scripts/llmwiki_source_ref_gate.py",
+    "scripts/madongmei_code_scorecard.py"
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "suite": "request_route_real_prompts",
+  "cases": [
+    {
+      "id": "docs_openai",
+      "query": "我要查 OpenAI 最新 API 文档",
+      "capability_id": "public-openai-docs",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "docs",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-openai-docs",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "security_threat_model",
+      "query": "帮我做这个仓库的安全审查，给我一个 threat model",
+      "capability_id": "public-security-threat-model",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "security",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-security-threat-model",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "security_best_practices",
+      "query": "帮我做 Python 安全 best practices review",
+      "capability_id": "public-security-best-practices",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "security",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-security-best-practices",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "meeting_public",
+      "query": "帮我把公开会议材料整理成 agenda 和 talking points",
+      "capability_id": "public-meeting-intelligence",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "meeting",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-meeting-intelligence",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "skill_governance",
+      "query": "帮我清理 skill 重复和合并策略",
+      "capability_id": "public-skill-governance",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "skill_governance",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-skill-governance",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "push_recovery_cn",
+      "query": "修一下公开仓库 push 卡住的问题",
+      "capability_id": "public-push-recovery-wiki",
+      "case_tags": ["positive", "zh_natural"],
+      "expect": {
+        "intent": "implementation",
+        "memory_route": "wiki",
+        "skill_mode": "none",
+        "skill": "",
+        "wiki_mode": "selected",
+        "wiki": "public-push-recovery-wiki",
+        "tool_mode": "auto_hint",
+        "tool_route": "push_readiness",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "push_recovery_cn_variant",
+      "query": "公开仓库 push 恢复怎么处理",
+      "capability_id": "public-push-recovery-wiki",
+      "case_tags": ["positive", "mixed"],
+      "expect": {
+        "intent": "implementation",
+        "memory_route": "wiki",
+        "skill_mode": "none",
+        "skill": "",
+        "wiki_mode": "selected",
+        "wiki": "public-push-recovery-wiki",
+        "tool_mode": "auto_hint",
+        "tool_route": "push_readiness",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "readme_capture",
+      "query": "把 README 沉淀到 wiki",
+      "capability_id": "public-readme-docs",
+      "case_tags": ["positive", "mixed"],
+      "expect": {
+        "intent": "knowledge_capture",
+        "memory_route": "wiki",
+        "skill_mode": "selected",
+        "skill": "public-readme-docs",
+        "wiki_mode": "selected",
+        "wiki": "public-repo-knowledge-hub",
+        "tool_mode": "auto_hint",
+        "tool_route": "memoryctl_ingest",
+        "wiki_action": "promote"
+      }
+    },
+    {
+      "id": "general_chat",
+      "query": "今天天气不错，随便聊聊",
+      "capability_id": "casual-chat",
+      "case_tags": ["negative"],
+      "expect": {
+        "intent": "casual",
+        "memory_route": "memory",
+        "skill_mode": "none",
+        "skill": "",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "ts_refactor",
+      "query": "帮我重构一个 TypeScript 组件并补测试",
+      "capability_id": "public-typescript-implementation",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "implementation",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-typescript-implementation",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "ts_plan",
+      "query": "帮我做 TypeScript implementation plan 并补测试",
+      "capability_id": "public-typescript-implementation",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "implementation",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-typescript-implementation",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "docs_plus_wiki",
+      "query": "帮我查 OpenAI 最新 API 文档，并沉淀到 wiki",
+      "capability_id": "public-openai-docs",
+      "case_tags": ["mixed"],
+      "expect": {
+        "intent": "knowledge_capture",
+        "memory_route": "wiki",
+        "skill_mode": "selected",
+        "skill": "public-openai-docs",
+        "wiki_mode": "selected",
+        "wiki": "public-repo-knowledge-hub",
+        "tool_mode": "auto_hint",
+        "tool_route": "memoryctl_ingest",
+        "wiki_action": "promote"
+      }
+    },
+    {
+      "id": "capability_route_registry_positive",
+      "query": "建立 skill tool memory wiki route registry 模板并补回归",
+      "capability_id": "capability_route_registry",
+      "case_tags": ["positive"],
+      "expect": {
+        "intent": "skill_governance",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-skill-governance",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "capability_route_registry_negative",
+      "query": "今天天气不错，随便聊聊，不需要调用任何工具",
+      "capability_id": "capability_route_registry",
+      "case_tags": ["negative"],
+      "expect": {
+        "intent": "casual",
+        "memory_route": "memory",
+        "skill_mode": "none",
+        "skill": "",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "none",
+        "tool_route": "",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "capability_route_registry_mixed",
+      "query": "给 skill capability route registry 一个实施计划，同时覆盖正负样本和中文表达边界",
+      "capability_id": "capability_route_registry",
+      "case_tags": ["mixed"],
+      "expect": {
+        "intent": "skill_governance",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-skill-governance",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    },
+    {
+      "id": "capability_route_registry_zh_natural",
+      "query": "以后新增能力时，skill、tool、memory、wiki 的路由模板要怎么强制校验？",
+      "capability_id": "capability_route_registry",
+      "case_tags": ["zh_natural"],
+      "expect": {
+        "intent": "skill_governance",
+        "memory_route": "skill",
+        "skill_mode": "selected",
+        "skill": "public-skill-governance",
+        "wiki_mode": "none",
+        "wiki": "",
+        "tool_mode": "auto_hint",
+        "tool_route": "quality_gate",
+        "wiki_action": "skip"
+      }
+    }
+  ]
+}

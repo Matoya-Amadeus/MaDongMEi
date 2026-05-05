@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"baselines":[{"name":"cli_minimal","template":"templates/task_baselines/app/cli_minimal"}]}

@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"evidence":{"required":true,"allowed":["repo-relative templates","public URLs","generated validation JSON"],"forbidden":["private runtime","secrets"]}}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "primary_root": "{{workspace_root}}",
+  "workspaces": [
+    {
+      "root": "{{workspace_root}}",
+      "label": "workspace",
+      "enabled": true,
+      "primary": true,
+      "registered_at": "{{timestamp}}",
+      "updated_at": "{{timestamp}}",
+      "last_seen_at": "{{timestamp}}"
+    }
+  ]
+}

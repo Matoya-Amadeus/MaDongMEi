@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"routes":[{"topic":"public_memory","surface":"wiki_template","path":"templates/wiki-page.template.md"},{"topic":"public_skill","surface":"skill_template","path":"templates/skill-page.template.md"}]}

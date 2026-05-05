@@ -1,0 +1,48 @@
+version: 1
+name: madongmei-public-projection
+principle: copy capability, never copy private content
+
+copy:
+  - README.md
+  - AGENTS.md
+  - src/madongmei/**
+  - scripts/**
+  - tests/**
+  - config/governance/**
+  - config/capability/**
+  - benchmarks/longmemeval/**
+  - manifests/metrics/**
+  - knowledge/repo-storage-audit.md
+  - knowledge/repo-retention-policy.md
+  - scripts/madongmei_code_scorecard.py
+  - scripts/request_route_real_prompt_suite.py
+  - config/capability/request-route-registry.json
+  - config/capability/request-route-template-schema.json
+  - config/capability/request-route-authoring-guide.md
+  - config/capability/request-route-real-prompt-suite.json
+  - config/capability/llmwiki-v2-policy.json
+  - config/capability/wiki-coverage-thresholds.json
+  - config/capability/phase-thresholds.json
+
+sanitize:
+  - config/codex/model_instructions.md -> templates/model-instructions.template.md
+  - memory/runtime paths -> MADONGMEI_HOME and CODEX_HOME variables
+  - source references -> repo-relative public references
+  - request route examples -> public prompt text only
+
+template:
+  - skills/** -> templates/skill-page.template.md
+  - knowledge/wiki/** -> templates/wiki-page.template.md
+  - knowledge/llmwiki/** -> templates/llmwiki-row.template.jsonl
+  - manifests/audit/** -> templates/governance/*.template.md
+  - templates/capability/** -> templates/capability/*.template.json
+
+omit:
+  - memories/personal/**
+  - memories/identity/**
+  - memories/workspace-agent-memory/**
+  - memories/runbooks/private/**
+  - private wiki bodies
+  - private skill bodies
+  - device-local runtime state
+  - secrets and credentials

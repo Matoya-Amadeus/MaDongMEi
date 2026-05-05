@@ -1,0 +1,14 @@
+{
+  "id": "example_tool_hint",
+  "when_to_hint": ["When the user explicitly asks for example verification."],
+  "when_not_to_hint": ["Do not hint for casual chat or unrelated requests."],
+  "safety_level": "advisory",
+  "requires_explicit_user_action": true,
+  "paired_intents": ["implementation"],
+  "paired_skills": ["example-skill"],
+  "paired_routes": ["skill"],
+  "path": "scripts/example_tool.sh",
+  "score": 0.6,
+  "threshold_policy": {"mode": "advisory", "auto_hint_threshold": 0.6},
+  "keywords": ["example verify"]
+}

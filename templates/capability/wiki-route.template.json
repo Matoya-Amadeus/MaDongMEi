@@ -1,0 +1,11 @@
+{
+  "topic_id": "example_topic",
+  "aliases": ["example topic", "example wiki"],
+  "positive_examples": ["Capture this canonical policy in the wiki."],
+  "negative_examples": ["Only run the install workflow."],
+  "preferred_surface": "wiki",
+  "capture_allowed": true,
+  "fallback_to_llmwiki": true,
+  "route_threshold_band": {"select": 0.45, "review": 0.35},
+  "negative_routes": ["unrelated_topic"]
+}

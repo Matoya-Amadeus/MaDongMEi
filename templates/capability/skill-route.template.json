@@ -1,0 +1,14 @@
+{
+  "id": "example_skill_route",
+  "name": "example-skill",
+  "intent": "implementation",
+  "aliases": ["example", "example skill"],
+  "positive_examples": ["Use example-skill for this implementation task."],
+  "negative_examples": ["Casual chat that mentions example in passing."],
+  "threshold_policy": {"mode": "default", "auto_load_threshold": 0.45, "boost": 0.0},
+  "suppression_rules": [{"id": "casual_low_confidence", "when_intent": "casual", "action": "diagnostic_only"}],
+  "tool_hints": ["quality_gate"],
+  "wiki_affinity": ["repo_knowledge_hub"],
+  "llmwiki_affinity": [],
+  "capture_policy": {"capture_allowed": false, "capture_on_explicit_request": true}
+}

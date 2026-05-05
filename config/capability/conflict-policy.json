@@ -1,0 +1,1 @@
+{"schema_version":1,"public_template":true,"mode":"report","rules":[{"name":"prefer_public_source","resolution":"keep repo-relative public source_ref"},{"name":"private_content","resolution":"omit_or_template"}]}

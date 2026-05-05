@@ -1,0 +1,5 @@
+schema_version: 1
+public_template: true
+rules:
+  - README and AGENTS must describe current public commands.
+  - Template pages must not contain private paths or secrets.

@@ -1,0 +1,16 @@
+schema_version: 1
+public_template: true
+classes:
+  public:
+    action: allow
+  template:
+    action: allow
+  private:
+    action: omit
+  secret:
+    action: block
+restricted_patterns:
+  - personal memory
+  - private wiki body
+  - private skill body
+  - device-local state

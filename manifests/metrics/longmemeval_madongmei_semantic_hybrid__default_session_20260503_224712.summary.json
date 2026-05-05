@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-05-03T22:47:42.256699+08:00",
+  "data_file": "data/longmemeval/longmemeval_s_cleaned.json",
+  "backend": "madongmei_semantic_hybrid",
+  "profile": "default",
+  "backend_key": "madongmei_semantic_hybrid:default",
+  "granularity": "session",
+  "questions_evaluated": 500,
+  "elapsed_sec": 28.5,
+  "session_metrics": {
+    "recall_any@1": 1.0,
+    "recall_any@3": 1.0,
+    "recall_any@5": 1.0,
+    "recall_any@10": 1.0,
+    "ndcg_any@1": 1.0,
+    "ndcg_any@3": 1.0,
+    "ndcg_any@5": 1.0,
+    "ndcg_any@10": 1.0
+  },
+  "per_type": {
+    "knowledge-update": {
+      "count": 78,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "multi-session": {
+      "count": 133,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "single-session-assistant": {
+      "count": 56,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "single-session-preference": {
+      "count": 30,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "single-session-user": {
+      "count": 70,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    },
+    "temporal-reasoning": {
+      "count": 133,
+      "recall_any@5": 1.0,
+      "recall_any@10": 1.0,
+      "ndcg_any@10": 1.0
+    }
+  },
+  "artifact_mode": "compact",
+  "full_results_recorded": false
+}

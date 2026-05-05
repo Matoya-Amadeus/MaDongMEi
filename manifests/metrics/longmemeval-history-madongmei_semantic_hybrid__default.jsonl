@@ -1,0 +1,1 @@
+{"generated_at": "2026-05-03T22:47:42.256699+08:00", "backend": "madongmei_semantic_hybrid", "profile": "default", "backend_key": "madongmei_semantic_hybrid:default", "data_file": "data/longmemeval/longmemeval_s_cleaned.json", "granularity": "session", "questions_evaluated": 500, "recall_any@5": 1.0, "recall_any@10": 1.0, "ndcg_any@10": 1.0}

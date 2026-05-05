@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "canonical": [
+    {
+      "path": "memoryctl",
+      "kind": "shell"
+    },
+    {
+      "path": "src/madongmei/cli.py",
+      "kind": "python"
+    },
+    {
+      "path": "scripts/install_context_bridge.sh",
+      "kind": "shell"
+    },
+    {
+      "path": "scripts/madongmei_doctor.py",
+      "kind": "python"
+    },
+    {
+      "path": "scripts/privacy_audit.sh",
+      "kind": "shell"
+    },
+    {
+      "path": "scripts/gate_matrix.py",
+      "kind": "python"
+    },
+    {
+      "path": "scripts/madongmei_code_scorecard.py",
+      "kind": "python"
+    },
+    {
+      "path": "scripts/request_route_real_prompt_suite.py",
+      "kind": "python"
+    },
+    {
+      "path": "scripts/longmemeval_benchmark_suite.py",
+      "kind": "python"
+    }
+  ],
+  "wrappers": [
+    {
+      "path": "quality_gate.sh",
+      "target": "install_selfcheck.sh + install_validation_matrix.sh",
+      "kind": "shell"
+    }
+  ]
+}

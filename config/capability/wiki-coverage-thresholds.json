@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "policy_name": "public-wiki-coverage-thresholds",
+  "version": "2026-05-05",
+  "stage1": {
+    "min_covered_cases": 1,
+    "min_coverage": 0.0
+  },
+  "stage2": {
+    "min_covered_cases": 1,
+    "min_coverage": 0.6
+  },
+  "public_notes": [
+    "Coverage thresholds describe public wiki/llmwiki completeness expectations.",
+    "They do not embed any private topic inventory."
+  ]
+}

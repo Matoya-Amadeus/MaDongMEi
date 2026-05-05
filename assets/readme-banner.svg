@@ -1,0 +1,58 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MaDongMei banner</title>
+  <desc id="desc">A public memory, wiki, and skill banner with capture, search, and review tags.</desc>
+  <defs>
+    <linearGradient id="bg" x1="48" y1="28" x2="1152" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071820"/>
+      <stop offset="0.55" stop-color="#0B3B3F"/>
+      <stop offset="1" stop-color="#0F6B67"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 92) rotate(90) scale(138)">
+      <stop stop-color="#F3D27A" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#F3D27A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(176 284) rotate(90) scale(126)">
+      <stop stop-color="#8BE8D9" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#8BE8D9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="56" y="48" width="1088" height="264" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#021116" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" rx="32" fill="#07131A"/>
+  <rect x="24" y="24" width="1152" height="312" rx="28" fill="url(#bg)" filter="url(#shadow)"/>
+  <circle cx="1020" cy="92" r="138" fill="url(#glow)"/>
+  <circle cx="176" cy="284" r="126" fill="url(#glow2)"/>
+  <path d="M884 78C944 62 1008 66 1074 94" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2" stroke-linecap="round"/>
+  <path d="M856 250C924 272 1000 274 1100 248" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+  <path d="M72 256C196 220 304 216 430 242" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="72" y="94" fill="#D8FFF5" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700" letter-spacing="4">PUBLIC MEMORY</text>
+  <text x="72" y="176" fill="#FFFFFF" font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif" font-size="74" font-weight="700" letter-spacing="-1">MaDongMei</text>
+  <text x="72" y="224" fill="#E6FFF9" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="500">A public memory layer for AI assistants</text>
+  <text x="72" y="258" fill="#C7F4EF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="400">给 AI 助手和协作者准备的公开记忆层</text>
+
+  <g>
+    <rect x="72" y="282" width="122" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="133" y="304" text-anchor="middle" fill="#FFFFFF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">capture</text>
+  </g>
+  <g>
+    <rect x="204" y="282" width="104" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="256" y="304" text-anchor="middle" fill="#FFFFFF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">search</text>
+  </g>
+  <g>
+    <rect x="318" y="282" width="98" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="367" y="304" text-anchor="middle" fill="#FFFFFF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">review</text>
+  </g>
+
+  <g>
+    <rect x="792" y="66" width="336" height="222" rx="24" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.16"/>
+    <text x="824" y="108" fill="#D8FFF5" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700" letter-spacing="2">AI PROMPTS</text>
+    <text x="824" y="144" fill="#FFFFFF" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600">1. bootstrap</text>
+    <text x="824" y="174" fill="#E6FFF9" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="400">2. capture / search</text>
+    <text x="824" y="204" fill="#E6FFF9" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="400">3. review / weekly-review</text>
+    <text x="824" y="234" fill="#E6FFF9" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="400">4. export-jsonl / import-jsonl</text>
+    <text x="824" y="266" fill="#F3D27A" font-family="ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">clean input, visible output</text>
+  </g>
+</svg>

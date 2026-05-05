@@ -1,0 +1,10 @@
+schema_version: 1
+public_template: true
+tiers:
+  low:
+    examples: [read-only checks, public templates]
+  medium:
+    examples: [runtime writes under MADONGMEI_HOME]
+  high:
+    examples: [system settings, secrets]
+    action: unsupported
